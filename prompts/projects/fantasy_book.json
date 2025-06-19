@@ -1,0 +1,32 @@
+{
+  "project_name": "fantasy_book_illustrations",
+  "created_date": "2025-06-19T10:00:00",
+  "description": "Chapter illustrations for fantasy novel",
+  "settings": {
+    "steps": 40,
+    "guidance": 8.0,
+    "width": 768,
+    "height": 1024
+  },
+  "prompts": [
+    {
+      "text": "A mystical forest with glowing blue mushrooms, ethereal lighting, fantasy art style",
+      "filename": "chapter_01_forest.png",
+      "settings": {
+        "seed": 12345
+      }
+    },
+    {
+      "text": "Ancient dragon sleeping on pile of gold coins, dark cave, dramatic lighting",
+      "filename": "chapter_02_dragon.png",
+      "settings": {
+        "guidance": 9.0
+      }
+    },
+    {
+      "text": "Medieval castle on a cliff during sunset, epic fantasy landscape",
+      "filename": "chapter_03_castle.png",
+      "settings": {}
+    }
+  ]
+}

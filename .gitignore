@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+dist/
+build/
+
+# Poetry
+poetry.lock  # Optional: comment out if you want to lock dependencies
+
+# AI Models (too large for Git)
+models/*.safetensors
+models/*.ckpt
+models/*.bin
+
+# Generated Images (optional - comment out if you want to track them)
+output/*/raw/
+output/*/processed/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Configuration secrets
+.env
+config/secrets.json
+
+# Development
+.mypy_cache/
+.pytest_cache/
+.coverage
+# Logs
+*.log
+logs/

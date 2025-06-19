@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "ai-image-studio"
+version = "0.1.0"
+description = "Professional AI image generation workflow with Stable Diffusion"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "ai_image_studio" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+# AI Generation Dependencies
+diffusers = "^0.21.0"
+transformers = "^4.30.0"
+accelerate = "^0.20.0"
+torch = "^2.0.0"
+torchvision = "^0.15.0"
+pillow = "^9.5.0"
+numpy = "^1.24.0"
+
+# Data Management
+pandas = "^2.0.0"
+opencv-python = "^4.7.0"
+
+# Utilities
+tqdm = "^4.65.0"
+colorama = "^0.4.6"
+click = "^8.1.0"
+python-dotenv = "^1.0.0"
+
+# Optional: For advanced features
+controlnet-aux = { version = "^0.0.6", optional = true }
+xformers = { version = "^0.0.20", optional = true }
+
+[tool.poetry.extras]
+advanced = ["controlnet-aux", "xformers"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+black = "^23.0"
+flake8 = "^6.0"
+mypy = "^1.0"
+pre-commit = "^3.0"
+
+[tool.poetry.scripts]
+ai-generate = "ai_image_studio.scripts.batch_generator:main"
+ai-prompts = "ai_image_studio.scripts.prompt_manager:main"
+ai-organize = "ai_image_studio.scripts.image_organizer:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
