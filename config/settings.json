@@ -1,0 +1,39 @@
+{
+  "generation": {
+    "default_model": "runwayml/stable-diffusion-v1-5",
+    "device": "cuda",
+    "fallback_device": "cpu",
+    "default_steps": 30,
+    "default_guidance": 7.5,
+    "default_size": [
+      512,
+      512
+    ],
+    "batch_size": 4
+  },
+  "paths": {
+    "output_dir": "output/raw",
+    "processed_dir": "output/processed",
+    "archive_dir": "output/archive",
+    "models_dir": "models",
+    "prompts_dir": "prompts"
+  },
+  "quality": {
+    "min_resolution": [
+      512,
+      512
+    ],
+    "max_file_size_mb": 10,
+    "allowed_formats": [
+      "png",
+      "jpg",
+      "jpeg"
+    ]
+  },
+  "metadata": {
+    "include_prompt": true,
+    "include_settings": true,
+    "include_timestamp": true,
+    "include_model_info": true
+  }
+}
