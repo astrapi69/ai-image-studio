@@ -18,7 +18,7 @@ from PIL import Image
 from tqdm import tqdm
 import pandas as pd
 
-from ..utils.file_helpers import load_config, save_metadata, ensure_directory
+from ai_image_studio.utils.file_helpers import load_config, save_metadata, ensure_directory
 from ..utils.image_helpers import add_metadata_to_image, validate_image
 
 

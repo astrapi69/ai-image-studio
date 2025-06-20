@@ -8,9 +8,6 @@ __pycache__/
 dist/
 build/
 
-# Poetry
-poetry.lock  # Optional: comment out if you want to lock dependencies
-
 # AI Models (too large for Git)
 models/*.safetensors
 models/*.ckpt
@@ -37,3 +34,20 @@ config/secrets.json
 # Logs
 *.log
 logs/
+
+# if you use idea ide
+##################
+# intellij files #
+##################
+*.iws
+*.iml
+*.ipr
+!.idea/runConfigurations
+.idea/inspectionProfiles
+.idea/libraries
+.idea/codeStyles
+.idea/shelf
+.idea/*.*
+
+# Poetry
+/poetry.lock  # Optional: comment out if you want to lock dependencies
